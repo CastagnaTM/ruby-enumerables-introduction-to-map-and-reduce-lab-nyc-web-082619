@@ -40,9 +40,14 @@ def reduce_to_all_true(number_array)
     if number_array[index] == false
       result = false
     end
-    return result
+  return result
 end
 
 def reduce_to_any_true(number_array)
-
+  result = false
+  number_array.length.times do |index|
+    if number_array[index] == true
+      result = true
+    end
+  return result
 end
