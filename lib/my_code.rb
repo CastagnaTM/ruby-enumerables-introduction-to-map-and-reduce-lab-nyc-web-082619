@@ -25,9 +25,8 @@ def map_to_square(number_array)
 end
 
 def reduce_to_total(number_array, starting_point = 0)
-  sum = 0
-	index = starting_point
-  while number_array[index] do
+  sum = starting_point
+	number_array.length.times do |index|
     sum += number_array[index]
 		index += 1
   end
