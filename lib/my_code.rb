@@ -40,6 +40,7 @@ def reduce_to_all_true(number_array)
     if number_array[index] == false
       result = false
     end
+  end
   return result
 end
 
@@ -49,5 +50,6 @@ def reduce_to_any_true(number_array)
     if number_array[index] == true
       result = true
     end
+  end
   return result
 end
